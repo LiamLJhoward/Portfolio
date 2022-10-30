@@ -5,39 +5,90 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Lernantino // Web Developer</title>
-  <link rel="stylesheet" href="./assets/css/style.css" />
+  <title>Liam Howard // Web Developer</title>
+  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com"> 
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,300;0,500;0,700;1,100;1,300;1,500&family=Permanent+Marker&display=swap" rel="stylesheet">
 </head>
 
 <body>
   <!-- main logo / nav -->
   <header>
-    <h1>Lernantino</h1>
+    <div class="logo">
+    <h1>Liam Howard</h1>
+    </div>
     <nav>
+        <div id="navigation">
+          <ul>
+            <li>
+                <a href="#work">Work</a>
+            </li>
+            <li>
+                <a href="#about">About Me</a>
+            </li>
+            <li>
+                <a href="#contact">Contact</a>
+            </li>
+        </ul>
+        </div>
     </nav>
   </header>
 
   <!-- hero banner -->
   <section class="hero-banner">
     <div>
-      <h2>Cool subtitle here!</h2>
+      <h2>  <h2>
     </div>
   </section>
 
-  <main class="page-wrapper">
+  <main class="page-wrapper" id="page-wrapper">
+     <!-- portfolio container -->
+     <section class="page-section" id="work"> 
+      <h2>Work</h2>
+    </section>
+    <section id="categoryGrid">
+      <div id="studyguide" class="categoryGridArea">
+        <div class="heading">Study Guide</div>
+      </div>
+      <div id="semantic" class="categoryGridArea">
+        <div class="heading">Semantic HTML</div>
+      </div>
+      <div id="other1" class="categoryGridArea">
+        <div class="heading">Other One</div>
+      </div>
+      <div id="other2" class="categoryGridArea">
+        <div class="heading">Other Two</div>
+      </div>
+      <div id="other3" class="categoryGridArea">
+        <div class="heading">Other Three</div>  
+      </div>
+    </section>
+
+    </body>
+    </section>
+
     <!-- about me -->
     <section class="page-section" id="about">
       <h2>About Me</h2>
     </section>
 
-    <!-- portfolio container -->
-    <section class="page-section" id="work">
-      <h2>Work</h2>
+    <section class="page-section" id="about">
+      <p>4</p>
     </section>
 
+   
     <!-- contact -->
-    <section class="page-section contact" id="contact">
+    <section class="page-section" id="contact">
       <h2>Contact Me</h2>
+    </section>
+
+    <section class="page-section" id="contact">
+      <ul> 
+        <li>Github</li>
+        <li>Email</li>
+        <li>Phone</li>
+      </ul>
     </section>
   </main>
 </body>
