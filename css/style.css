@@ -6,15 +6,25 @@ body {
 
 /* Header */ 
 
+h1 {
+  font-size: 3.5rem;
+}
+
+h2 {
+  justify-content: center;
+}
+
 .logo {
   background-color: yellow;
-  padding-top: 2.5rem;
+  padding-top: 0.7rem;
   margin-left: 2rem;
+  margin-bottom: 5rem;
 }
 
 #navigation {
   display: inline-block;
   float: right;
+  margin-top: -8rem;
 }
 
 #navigation ul {
@@ -25,10 +35,15 @@ body {
   display: inline-block;
   margin-left: 25px;
   margin-right: 25px;
+  font-size: 1.5rem;
 }
 
 #work {
   background-color: beige;
+}
+
+#categoryGrid{
+  background-color: antiquewhite;
 }
 
 #about {
@@ -47,12 +62,60 @@ body {
   grid-gap: 10px;
   grid-template-columns: 1fr 3fr;
   grid-template-rows: auto;
-  margin-left: 2rem;
-  
+  margin-left: 8rem;
+  max-width: 80%;
 }
 
+#categoryGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 200px 200px 200px;
+  grid-template-areas: 
+  "studyguide studyguide"
+  "semantic other1"
+  "other2 other3";
+  padding: 15px;
+  gap: 15px
+}
+
+#studyguide {
+  grid-area: studyguide;
+  background-color: white;
+}
+
+#semantic {
+  grid-area: semantic;
+  background-color: white;
+}
+
+#other1 {
+  grid-area: other1;
+  background-color: white;
+}
+
+#other2 {
+  grid-area: other2;
+  background-color: white;
+}
+
+#other3 {
+  grid-area: other3;
+  background-color: white;
+}
+
+/* About Me */
+
+p {
+  padding-left: 20px;
+  font-size: 1.5rem;
+  line-height: 1.75rem;
+}
 
 /* Contact */
+
+#contact {
+  margin-bottom: 2rem;
+}
 
 #contact ul {
   list-style: none;
@@ -60,3 +123,4 @@ body {
   flex-direction: row;
   justify-content: space-around;
 }
+
