@@ -1,7 +1,7 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Gill Sans', 'Gill Sans MT', "Permanent Marker", Calibri, 'Trebuchet MS', sans-serif
+  font-family: 'Inter', "Permanent Marker", Calibri, 'Trebuchet MS', sans-serif;
 }
 
 /* Header */ 
@@ -15,16 +15,17 @@ h2 {
 }
 
 .logo {
-  background-color: yellow;
   padding-top: 0.7rem;
   margin-left: 2rem;
   margin-bottom: 5rem;
+  font-family: 'Inter';
+  letter-spacing: 20px;
 }
 
 #navigation {
-  display: inline-block;
   float: right;
   margin-top: -8rem;
+  color: black;
 }
 
 #navigation ul {
@@ -38,21 +39,19 @@ h2 {
   font-size: 1.5rem;
 }
 
-#work {
-  background-color: beige;
+/* Links */ 
+
+a {
+  color: black;
 }
 
-#categoryGrid{
-  background-color: antiquewhite;
-}
+a:link { text-decoration: none; }
 
-#about {
-  background-color: darkcyan;
-}
+a:visited { text-decoration: none; }
 
-#contact {
-  background-color: darkslategray;
-}
+a:hover { text-decoration: none; }
+
+a:active { text-decoration: none; }
 
 /* Main Grid */
 
@@ -64,7 +63,50 @@ h2 {
   grid-template-rows: auto;
   margin-left: 8rem;
   max-width: 80%;
+  row-gap: 7rem;
 }
+
+#work {
+  border-right: 3.5px solid black;
+  font-family: 'Inter';
+  letter-spacing: 5px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end ;
+  font-size: 1.8rem;
+}
+
+#categoryGrid{
+  background-color: antiquewhite;
+}
+
+#about {
+  border-right: 3.5px solid black;
+  font-family: 'Inter';
+  letter-spacing: 5px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end ;
+  font-size: 1.8rem;
+}
+
+#aboutparagraph p {
+  font-family: 'Inter';
+  font-size: 1.7rem;
+  line-height: 3rem;
+}
+
+#contact {
+  border-right: 3.5px solid black;
+  font-family: 'Inter';
+  letter-spacing: 5px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end ;
+  font-size: 1.8rem;
+}
+
+/* The portfolio grid */ 
 
 #categoryGrid {
   display: grid;
@@ -113,11 +155,16 @@ p {
 
 /* Contact */
 
+#contactlink {
+  background-color: grey;
+  margin-bottom: 2rem;
+}
+
 #contact {
   margin-bottom: 2rem;
 }
 
-#contact ul {
+#contactlink ul {
   list-style: none;
   display: flex;
   flex-direction: row;
