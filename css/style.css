@@ -27,6 +27,7 @@ h2 {
   margin-top: -8rem;
   color: black;
   font-weight: 300;
+  min-width: 460px;
 }
 
 #navigation ul {
@@ -110,6 +111,16 @@ a:active { text-decoration: none; }
 }
 
 /* The portfolio grid */ 
+.heading {
+  border: 2px solid black;
+  padding: 150px 0px 10px 20px;
+  width: auto;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+  text-decoration-line: underline;
+  
+}
 
 #categoryGrid {
   display: grid;
@@ -120,61 +131,39 @@ a:active { text-decoration: none; }
   "semantic other1"
   "other2 other3";
   padding: 15px;
-  gap: 15px
+  gap: 15px;
+  min-width: 500px;
+  max-width: 750px;
 }
 
 #studyguide {
   grid-area: studyguide;
-  border: 2px solid black;
-  display: flex;
-  justify-content: flex-start;
-  align-items: flex-end;
-  text-decoration-line: underline;
 }
 
 #semantic {
   grid-area: semantic;
-  border: 2px solid black;
-  display: flex;
-  justify-content: flex-start;
-  align-items: flex-end;
-  text-decoration-line: underline;
 }
 
 #other1 {
   grid-area: other1;
-  border: 2px solid black;
-  display: flex;
-  justify-content: flex-start;
-  align-items: flex-end;
-  text-decoration-line: underline;
 }
 
 #other2 {
   grid-area: other2;
-  border: 2px solid black;
-  display: flex;
-  justify-content: flex-start;
-  align-items: flex-end;
-  text-decoration-line: underline;
 }
 
 #other3 {
   grid-area: other3;
-  border: 2px solid black;
-  border-bottom: 1px solid black;
-  display: flex;
-  justify-content: flex-start;
-  align-items: flex-end;
-  text-decoration-line: underline;
 }
 
 /* About Me */
 
-p {
+#aboutparagraph p {
   padding-left: 20px;
-  font-size: 1.5rem;
-  line-height: 1.75rem;
+  font-size: 1.8rem;
+  line-height: 2.5rem;
+  max-width: 750px;
+  min-width: 400px;
 }
 
 /* Contact */
