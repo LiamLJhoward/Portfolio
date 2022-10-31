@@ -184,58 +184,58 @@ a:active { text-decoration: none; }
   max-width: 750px;
 }
 
-@media only screen and (max-width: 1080px) {
+
+/* Desktop */ 
+@media only screen and (min-width: 1024px) {
+  
+  }
+
+
+/* Tablet */
+@media screen and (min-width: 767px) and (max-width: 1023px) {
   #navigation {
     float: left;
-    padding-top: 50px;
-    margin-left: -2.01rem;
+    padding-top: 25px;
+    margin-left: -2rem;
   }
-}
 
-@media only screen and (max-width: 900px){
+  .logo {
+    letter-spacing: 10px;
+  }
+
   .page-wrapper {
-    grid-template-columns: 1fr;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 100px 3fr;
     grid-template-rows: auto;
-    max-width: 50%;
-    gap: 4px;
-    padding: 4px;
-  }  
+    margin-left: 8rem;
+    max-width: 80%;
+    row-gap: 7rem;
+  }
 
-  #categoryGrid {
-    grid-template-columns: 1fr;
-    grid-template-rows: 200px 200px 200px 200px 200px;
-    grid-template-areas: 
-    "studyguide"
-    "semantic" 
-    "other1"
-    "other2" 
-    "other3";
+  #work, #about, #contact {
+    margin-left: -5rem;
+    font-size: 1rem;
+  }
+
+  #aboutparagraph p {
+    max-width: 700px;
+    min-width: 400px;
   }
 }
 
-@media only screen and (max-width: 680px) {
-  .page-wrapper {
-    margin: 0;
-    grid-template-columns: 1fr;
-    grid-template-rows: auto;
-    max-width: 50%;
-    margin-left: 20px;
-    gap: 4px;
-  }  
-
-  #categoryGrid {
-    grid-template-columns: 1fr;
-    grid-template-rows: 200px 200px 200px 200px 200px;
-    grid-template-areas: 
-    "studyguide"
-    "semantic" 
-    "other1"
-    "other2" 
-    "other3";
+/* Phone */
+@media only screen and (max-width: 767px) {
+  #navigation {
+    float: left;
+    padding-top: 25px;
+    margin-left: -2rem;
   }
-}
 
-@media only screen and (max-width: 400px){
+  .logo {
+    letter-spacing: 10px;
+  }
+
   .page-wrapper {
     grid-template-columns: 1fr;
     grid-template-rows: auto;
@@ -254,5 +254,15 @@ a:active { text-decoration: none; }
     "other2" 
     "other3";
   }
+
+  #work, #about, #contact {
+    
+    font-size: 1rem;
+}
+
+#aboutparagraph p {
+  max-width: 700px;
+  min-width: 400px;
+}
 }
   
