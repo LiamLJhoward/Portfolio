@@ -94,7 +94,8 @@ a:active { text-decoration: none; }
 
 /* The portfolio grid */ 
 .heading {
-  border: 2px solid black;
+  border-bottom: 2px solid black;
+  border-left: 2px solid black;
   padding: 150px 0px 10px 20px;
   width: auto;
   display: flex;
@@ -120,6 +121,10 @@ a:active { text-decoration: none; }
 
 #studyguide {
   grid-area: studyguide;
+  background-image: url(../images/studyguide.png);
+  background-size: 100% 200px; 
+  margin-bottom: 40px;
+ 
 }
 
 #semantic {
@@ -128,6 +133,9 @@ a:active { text-decoration: none; }
 
 #other1 {
   grid-area: other1;
+  background-image: url(../images/02-portfolio-2.jpg);
+  background-size: 100% 200px; 
+  margin-bottom: 40px;
 }
 
 #other2 {
@@ -184,6 +192,7 @@ a:active { text-decoration: none; }
   max-width: 750px;
 }
 
+/* Media */
 
 /* Desktop */ 
 @media only screen and (min-width: 1024px) {
@@ -225,7 +234,7 @@ a:active { text-decoration: none; }
 }
 
 /* Phone */
-@media only screen and (max-width: 767px) {
+@media screen and (max-width: 767px) {
   #navigation {
     float: left;
     padding-top: 25px;
@@ -240,12 +249,14 @@ a:active { text-decoration: none; }
     grid-template-columns: 1fr;
     grid-template-rows: auto;
     max-width: 50%;
-    margin-left: 30px;
     gap: 2px;
+    padding: 15px 15px 15px 0px;
+    margin-left: 2rem;
+
   }  
 
   #categoryGrid {
-    grid-template-columns: 1fr;
+    grid-template-columns: 450px;
     grid-template-rows: 200px 200px 200px 200px 200px;
     grid-template-areas: 
     "studyguide"
@@ -258,11 +269,12 @@ a:active { text-decoration: none; }
   #work, #about, #contact {
     
     font-size: 1rem;
-}
+} 
 
-#aboutparagraph p {
-  max-width: 700px;
-  min-width: 400px;
+  #aboutparagraph p {
+    max-width: 650px;
+    min-width: 400px;
+    border-right: none;
 }
 }
   
