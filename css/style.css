@@ -129,6 +129,9 @@ a:active { text-decoration: none; }
 
 #semantic {
   grid-area: semantic;
+  background-image: url(../images/Semantic.png);
+  background-size: 100% 200px; 
+  margin-bottom: 40px;
 }
 
 #other1 {
@@ -138,12 +141,19 @@ a:active { text-decoration: none; }
   margin-bottom: 40px;
 }
 
+
 #other2 {
   grid-area: other2;
+  background-color: lightgray;
+  background-size: 100% 200px; 
+  margin-bottom: 40px;
 }
 
 #other3 {
   grid-area: other3;
+  background-color: beige;
+  background-size: 100% 200px; 
+  margin-bottom: 40px;
 }
 
 .categoryGridArea #studyguide {
